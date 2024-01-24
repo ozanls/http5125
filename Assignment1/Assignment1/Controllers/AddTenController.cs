@@ -7,13 +7,15 @@ using System.Web.Http;
 
 namespace Assignment1.Controllers
 {
+
     public class AddTenController : ApiController
     {
-        /*
-       This function will add 10 to the ID, and return the sum.
-       e.g. GET localhost/AddTen/21 -> 31
-       */
-
+        /// <summary>
+        /// This function will add 10 to the ID, and return the sum.
+        /// </summary>
+        /// <example>
+        /// GET localhost/AddTen/21 -> 31
+        /// </example>
         public int Get(int id)
         {
             int sum = id + 10;

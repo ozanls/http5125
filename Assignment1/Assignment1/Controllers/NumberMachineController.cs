@@ -9,10 +9,12 @@ namespace Assignment1.Controllers
 {
     public class NumberMachineController : ApiController
     {
-        /*
-        This function will always return the number 2.
-        e.g. GET localhost/NumberMachine/10 -> 2
-        */
+        /// <summary>
+        /// This function will always return the number 2.
+        /// </summary>
+        /// <example>
+        /// GET localhost/NumberMachine/10 -> 2
+        /// </example>
 
         public int Get(int id)
         {

@@ -9,10 +9,12 @@ namespace Assignment1.Controllers
 {
     public class SquareController : ApiController
     {
-        /*
-        This function will return the square of the ID provided.
-        e.g. GET localhost/Square/10 -> 100
-        */
+        /// <summary>
+        /// This function will return the square of the ID provided.
+        /// </summary>
+        /// <example>
+        /// GET localhost/Square/10 -> 100
+        /// </example>
 
         public int Get(int id)
         {
