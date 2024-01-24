@@ -18,10 +18,9 @@ namespace Assignment1.Controllers
         /// </example>
         public string Post()
         {
-            string greeting = "Hello World";
+            string greeting = "Hello World!";
             return greeting;
         }
-
 
 
         /// <summary>
