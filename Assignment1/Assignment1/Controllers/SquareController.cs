@@ -10,8 +10,10 @@ namespace Assignment1.Controllers
     public class SquareController : ApiController
     {
         /// <summary>
-        /// This function will return the square of the ID provided.
+        /// Return the square of the number provided.
         /// </summary>
+        /// <param name="id">Input number</param>
+        /// <returns>{id}^2</returns>
         /// <example>
         /// GET localhost/Square/10 -> 100
         /// </example>

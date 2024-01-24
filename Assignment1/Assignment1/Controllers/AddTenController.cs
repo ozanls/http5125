@@ -11,8 +11,10 @@ namespace Assignment1.Controllers
     public class AddTenController : ApiController
     {
         /// <summary>
-        /// This function will add 10 to the ID, and return the sum.
+        /// Add 10 to the ID, and return the sum.
         /// </summary>
+        /// <param name="id">Input number</param>
+        /// <returns>{id} + 10</returns>
         /// <example>
         /// GET localhost/AddTen/21 -> 31
         /// </example>

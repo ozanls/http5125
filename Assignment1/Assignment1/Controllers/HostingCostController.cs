@@ -7,11 +7,15 @@ using System.Web.Http;
 
 namespace Assignment1.Controllers
 {
+
     public class HostingCostController : ApiController
     {
+
         /// <summary>
-        /// This function will return a hypothetical hosting cost, based on the parameters provided on the assignment sheet.
+        /// Return a hypothetical hosting cost, based on the parameters provided on the assignment sheet.
         /// </summary>
+        /// <param name="id">Number of days serviced</param>
+        /// <returns>Hosting cost before taxes, taxes, hosting cost with taxes</returns>
         /// <example>
         /// GET.../HostingCost/14 ->    “2 fortnights at $5.50/FN = $11.00 CAD”
         ///                             “HST 13% = $1.43 CAD”

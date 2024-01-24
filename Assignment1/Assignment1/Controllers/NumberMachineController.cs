@@ -12,6 +12,8 @@ namespace Assignment1.Controllers
         /// <summary>
         /// This function will always return the number 2.
         /// </summary>
+        /// <param name="id">Input number</param>
+        /// <returns>2</returns>
         /// <example>
         /// GET localhost/NumberMachine/10 -> 2
         /// </example>
