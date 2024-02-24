@@ -11,7 +11,7 @@ namespace Assignment1.Controllers
     public class AddTenController : ApiController
     {
         /// <summary>
-        /// Add 10 to the ID, and return the sum.
+        /// Adds 10 to the input, and return the sum.
         /// </summary>
         /// <param name="id">Input number</param>
         /// <returns>{id} + 10</returns>

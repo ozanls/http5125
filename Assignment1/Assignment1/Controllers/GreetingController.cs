@@ -27,7 +27,7 @@ namespace Assignment1.Controllers
         /// Return a greeting to a number of people, based on the ID.
         /// </summary>
         /// <param name="id">The number of people being greeted</param>
-        /// <returns>"Greetings to {id} people!</returns>
+        /// <returns>"Greetings to {id} people!"</returns>
         /// <example>
         /// GET localhost/Greeting/3 -> "Greetings to 3 people!"
         /// </example>
