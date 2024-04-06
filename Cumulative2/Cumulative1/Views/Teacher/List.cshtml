@@ -1,0 +1,22 @@
+﻿
+@model IEnumerable<Cumulative2.Models.Teacher>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Teachers</h2>
+
+<div>
+    <a style="background-color: yellow;" href="/Teacher/New">Add Teacher</a>
+</div>
+
+@{ 
+    foreach (Cumulative2.Models.Teacher Teacher in Model)
+            {
+                <div><a href="/Teacher/Show/@Teacher.TeacherId">@Teacher.TeacherfName @Teacher.TeacherlName</a></div>
+
+            }
+
+}
+
