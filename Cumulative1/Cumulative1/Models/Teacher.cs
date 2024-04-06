@@ -8,7 +8,8 @@ namespace Cumulative1.Models
     public class Teacher
     {
         public int TeacherId { get; set; }
-        public string TeacherName { get; set;  }
+        public string TeacherfName { get; set; }
+        public string TeacherlName { get; set; }
         public string EmployeeNumber { get; set; }
         public int TeacherSalary { get; set; }
         public string TeacherHireDate { get; set; }
