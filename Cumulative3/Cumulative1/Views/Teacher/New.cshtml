@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Add Teacher</h2>
+
+<form method="POST" id="teacherform" onsubmit="return validateForm()">
+    <div>
+        <label>First Name:</label>
+        <input type="text" name="TeacherfName" id="teacherfname"/>
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input type="text" name="TeacherlName" id="teacherlname"/>
+    </div>
+    <div>
+        <label>Employee Number:</label>
+        <input type="text" name="EmployeeNumber" id="employeenumber"/>
+    </div>
+    <div>
+        <label>Hire Date:</label>
+        <input type="date" name="TeacherHireDate" id="hiredate"/>
+    </div>
+    <div>
+        <label>Salary:</label>
+        <input type="text" name="TeacherSalary" id="teachersalary"/>
+    </div>
+    <div>
+        <input type="submit"  value="Add Teacher" />
+    </div>
+</form>
+
+<script>
+    firstName = document.getElementById("teacherfname")
+    lastName = document.getElementById("teacherlname")
+    employeeNumber = document.getElementById("employeenumber")
+    hireDate = document.getElementById("hiredate")
+    teacherSalary = document.getElementById("teachersalary")
+
+    function validateForm() {
+
+        if (firstName.value === "") {
+            firstName.style.backgroundColor = "#FFCCCB"
+            alert("First name cannot be left blank. Please try again")
+            return false;
+        }
+        else {
+            firstName.style.backgroundColor = "rgb(255, 255, 255)"
+            firstName.style.borderColor = "green"
+        }
+
+        if (lastName.value === "") {
+            lastName.style.backgroundColor = "#FFCCCB"
+            alert("Last name cannot be left blank. Please try again")
+            return false;
+        }
+        else {
+            lastName.style.backgroundColor = "rgb(255, 255, 255)"
+            lastName.style.borderColor = "green"
+        }
+
+        if (employeeNumber.value === "") {
+            employeeNumber.style.backgroundColor = "#FFCCCB"
+            alert("Employee number cannot be left blank. Please try again")
+            return false;
+        }
+        else {
+            employeeNumber.style.backgroundColor = "rgb(255, 255, 255)"
+            employeeNumber.style.borderColor = "green"
+        }
+
+        if (hireDate.value === "") {
+            hireDate.style.backgroundColor = "#FFCCCB"
+            alert("Hire date cannot be left blank. Please try again")
+            return false;
+        }
+        else {
+            hireDate.style.backgroundColor = "rgb(255, 255, 255)"
+            hireDate.style.borderColor = "green"
+        }
+
+        if (teacherSalary.value === "") {
+            teacherSalary.style.backgroundColor = "#FFCCCB"
+            alert("Teacher salary cannot be left blank. Please try again")
+            return false;
+        }
+        else {
+            teacherSalary.style.backgroundColor = "rgb(255, 255, 255)"
+            teacherSalary.style.borderColor = "green"
+        }
+
+        document.getElementById("teacherform").action = "/Teacher/Create";
+    }
+</script>
